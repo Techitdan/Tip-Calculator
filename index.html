@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="splitter">SPLI<br />TTER</h2>
+
+      <div class="container2">
+        <div class="box-one">
+          <h2>Bill</h2>
+          <input class="input-field" type="text" placeholder="$" />
+
+          <h2>Select Tip %</h2>
+
+          <div class="rows">
+            <div class="row-one">
+              <div class="perc five-perc">5%</div>
+              <div class="perc ten-perc">10%</div>
+              <div class="perc fifteen-perc">15%</div>
+            </div>
+
+            <div class="row-two">
+              <div class="perc twentyfive-perc">25%</div>
+              <div class="perc fifty-perc">50%</div>
+              <input class="perc custom" type="number" placeholder="Custom" />
+              <!-- <div class="perc custom">
+            </div> -->
+            </div>
+          </div>
+
+          <div class="num-of-people">
+            <div class="number">
+              <h2>Number of People</h2>
+              <div class="warning"></div>
+            </div>
+            <input class="input-field People" type="number" placeholder="5" />
+          </div>
+        </div>
+
+        <div class="box-two">
+          <div class="tip">
+            <div class="tip-">
+              <div class="Tip-Amt">Tip Amount</div>
+              <div class="pr">/person</div>
+            </div>
+
+            <div class="amount">$<span class="totalTip">4.27</span></div>
+          </div>
+          <div class="total-person">
+            <div class="tot">
+              <div class="total">Total</div>
+              <div class="prs">/person</div>
+            </div>
+
+            <div class="tot-prs">$<span class="totalBill">32.79</span></div>
+          </div>
+
+          <button class="btn">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
